@@ -16,6 +16,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #d05c2e;
+  max-height: 61px;
   padding: .4rem 0;
 }
 
@@ -26,38 +27,36 @@ body {
 
 .header h1 {
   color: #fff;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 2rem;
   margin: 0;
 }
 
-.nav {
+.nav ul {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-}
-
-.nav a {
   background-color: #d05c2e;
   border-top: 1px solid #a63f38;
   border-bottom: 1px solid #a63f38;
-  display: inline-flex;
-  justify-content: center;
-  list-style-type: none;
-  width: 100%;
-}
-
-.nav .cereals {
-  border: 1px solid #a63f38;
-}
-
-.nav a {
-  color: #fff;
   font-size: 1.125rem;
-  text-decoration: none;
-  padding: .5em 0;
+  padding: 0;
+  margin: 0;
 }
 
-.nav a:hover {
+.nav ul li {
+  display: flex;
+}
+
+.nav ul li a {
+  display: inline-flex;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-left: 1px solid #a63f38;
+  border-right: 1px solid #a63f38;
+  padding: .5em;
+}
+
+.nav li a:hover {
   background-color: #a63f38;
 }
